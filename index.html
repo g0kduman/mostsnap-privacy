@@ -60,7 +60,7 @@
 
   <div class="badge">MostSnap Chrome Eklentisi</div>
   <h1>Gizlilik Politikası</h1>
-  <p class="updated">Son güncelleme: 19 Haziran 2026</p>
+  <p class="updated">Son güncelleme: 19 Haziran 2026 (v1.3.0 izin güncellemesi)</p>
 
   <p>
     MostSnap ("eklenti", "biz"), Chrome tarayıcısı için geliştirilmiş bir ekran görüntüsü
@@ -81,9 +81,9 @@
   <p>MostSnap'in çalışması için Chrome'dan istediği izinler ve kullanım amaçları:</p>
   <ul>
     <li>
-      <strong>activeTab / tabs</strong> — Hangi sekmede işlem yapılacağını belirlemek ve
-      o sekmenin ekran görüntüsünü almak (<code>chrome.tabs.captureVisibleTab</code>) için
-      kullanılır.
+      <strong>activeTab</strong> — Kullanıcı eklenti ikonuna tıkladığında, o anki
+      sekmede çalışabilmek ve o sekmenin ekran görüntüsünü almak
+      (<code>chrome.tabs.captureVisibleTab</code>) için kullanılır.
     </li>
     <li>
       <strong>scripting</strong> — Seçtiğin sayfada otomatik kaydırma yapmak, alan/eleman
@@ -94,13 +94,12 @@
       <strong>downloads</strong> — Oluşturulan PNG dosyasını bilgisayarındaki indirilenler
       klasörüne kaydetmek için kullanılır.
     </li>
-    <li>
-      <strong>host_permissions (&lt;all_urls&gt;)</strong> — Eklentinin, hangi web sitesini
-      ziyaret ediyor olursan ol o sayfada çalışabilmesi için gereklidir. Bu izin, sayfa
-      içeriğini okumak veya başka bir amaçla kullanmak için değil, sadece kaydırma ve
-      ekran görüntüsü alma işlevini her sitede çalıştırabilmek için istenir.
-    </li>
   </ul>
+  <p>
+    MostSnap, <code>tabs</code> veya <code>&lt;all_urls&gt;</code> gibi geniş kapsamlı
+    izinler kullanmaz. Eklenti, sadece kullanıcının eklenti ikonuna tıklayarak
+    etkileşime girdiği sekmede ve sadece o sekme açıkken çalışır.
+  </p>
 
   <h2>Veri toplama, saklama ve paylaşım</h2>
   <p>
